@@ -19,7 +19,7 @@ docker run -p 8000:8000 -e BIRTHDAY=1992-12-21 lewiseason/ageulator
 Docker & `nginx-proxy`:
 
 ```shell
-docker run -e VIRTUAL_HOST=ageulator.lewiseason.co.uk -e BIRTHDAY=1992-12-21 lewiseason/ageulator
+docker run -d --name ageulator -e VIRTUAL_HOST=ageulator.lewiseason.co.uk -e ENABLE_IPV6=true -e BIRTHDAY=1992-12-21 lewiseason/ageulator
 ```
 
 ## Dependencies
