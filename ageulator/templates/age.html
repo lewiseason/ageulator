@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bulma.min.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <section class="hero is-dark is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="subtitle">
+            Day
+          </h2>
+          <h1 class="title is-size-1">
+            {{ days }}
+          </h1>
+
+          <h2>
+            (that's over {{ years }} years)
+          </h2>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
