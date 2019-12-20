@@ -6,6 +6,7 @@ from flask import Flask, request, render_template, jsonify
 
 
 app = Flask(__name__)
+application = app
 
 try:
     birthday = datetime.strptime(os.environ["BIRTHDAY"], '%Y-%m-%d')
